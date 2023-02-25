@@ -14,6 +14,9 @@
   <div>
     <%= form.label :slug, style: "display: block" %>
     <%= form.text_field :slug %>
+    <% if article.new_record? %>
+      <div>randomly generated unless specified</div>
+    <% end %>
   </div>
 
   <div>
